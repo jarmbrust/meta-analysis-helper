@@ -2,12 +2,11 @@
 export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
-    ['@nuxtjs/eslint-module', { /* module options */ }],
+    '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss'
   ],
-  devtools: { enabled: true },
+  devtools: { enabled: true, productionTip: false, },
   alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+    pinia: '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs'
   },
-  
-})
+});
